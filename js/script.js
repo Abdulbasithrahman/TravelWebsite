@@ -61,3 +61,29 @@ function displaySlide(n) {
     }
     totalslides[slideIndex - 1].style.display = "block";
 }
+
+function validateForm() {
+    var fullName = document.getElementById("fullName").value;
+    var email = document.getElementById("email").value;
+    var contactNumber = document.getElementById("contactNumber").value;
+    var birthdate = new Date(document.getElementById("birthdate").value);
+    var password = document.getElementById("password").value;
+
+    if (fullName == "" || email == "" || contactNumber == "" || birthdate == "" || password == "") {
+        alert("All fields must be filled out");
+        return false
+    }
+
+    if (contactNumber.length != 10) {
+        alert("Contact number must be 10 digits long");
+        return false 
+    }
+
+    if (birthdate > new Date()) {
+        alert("Please enter a valid birthdate");
+        return false
+    }
+    else {
+        return true;
+    }
+}
