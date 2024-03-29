@@ -8,20 +8,21 @@ body{
 }
 .navbar-brand{
     margin: 0.5em;
-    color: rgba(52, 99, 174, 0.823);
+    color: black;
     font-size: 1.3em;
     font-family: 'Anton', sans-serif;  
 }
 .nav-link{
     font-size: 1.4rem;
     margin-left: 0.7em;
-    color: rgba(52, 99, 174, 0.823);
+    color:black;
     font-family: 'Ubuntu', sans-serif;
 }
 .jumbotron{
-    background-image:url('/images/background-image.jpg');
+    background-image:url('/images/background1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +53,7 @@ nav button{
     margin-right: .8rem;
 }
 #changetext{
-    color: rgba(52, 99, 174, 0.823);
+    color: white;
     font-size: 80px;
 }
 #changetext::after{
